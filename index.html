@@ -1,50 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
-        <title>Document</title>
-</head>
-<body>
+    <title>AI Trip Generator</title>
+  </head>
+  <body>
     <div class="container">
-        <header>
+      <header>
         <h1>AI Trip Generator</h1>
-        </header>
+      </header>
 
-        <main>
-            <form id="travel-plans-generator">
-                <input type="text" class="prompt" placeholder="Please enter the city you would like to travel to" autofocus autocomplete="off" required id="user-instructions"/>
-                <input type="submit" class="prompt-button"/>
-            </form>
+      <main>
+        <div class="form-container">
+          <form id="travel-plans-generator">
+            <input
+              type="text"
+              placeholder="Please enter the city you would like to travel to"
+              autofocus
+              required
+              autocomplete="off"
+              class="instructions"
+              id="user-instructions"
+            />
+            <input type="submit" class="prompt-button" />
+          </form>
+          <div class="hint">i.e: Paris, Tokyo, Berlin</div>
+        </div>
+        <div class="travel-plan" id="travel-plan"></div>
+      </main>
 
-            <div class="travel-plans" id="travel-plans">
-                
-            </div>
-        </main>
-
-        <footer>
-            This AI project is coded by 
-            <a 
-            href="https://github.com/Sarffk17" 
-            target="_blank">
-            Kelly Sarff 
-            </a>
-            and is open-sourced on 
-            <a 
-            href="https://github.com/Sarffk17/Trip-Generator" 
-            target="_blank">
-            GithUb </a>
-            and is hosted on
-            <a 
-            href="trip-generator-ai.netlify.app" 
-            target="_blank">
-            Netlify </a>
-        </footer>
-
-        <script src="src/index.js"></script>
+      <footer>
+        This AI project is coded by 
+        <a 
+        href="https://github.com/Sarffk17" 
+        target="_blank">
+        Kelly Sarff 
+        </a>
+        and is open-sourced on 
+        <a 
+        href="https://github.com/Sarffk17/Trip-Generator" 
+        target="_blank">
+        GithUb </a>
+        and is hosted on
+        <a 
+        href="trip-generator-ai.netlify.app" 
+        target="_blank">
+        Netlify </a>
+    </footer>
     </div>
-</body>
+
+    <script src="src/index.js"></script>
+  </body>
 </html>
